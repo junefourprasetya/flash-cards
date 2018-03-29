@@ -1,0 +1,38 @@
+extends layout
+
+block content
+    content
+        h4= text
+        if hint
+            i hint: #{hint}
+        //- i Hint: entah ?
+        //- else
+        //-     p petunjuk tidak mungkin ada
+
+        br
+        br
+        a(href=`/cards/${id}?side=${sidene}`) #{SideToDisplay}
+        br
+        //- Soal Baru
+        a(href='/cards') Soal Baru
+        br
+        //- Log Out
+        a(href='/LogOut') Log Out
+
+
+        
+    //-     ul
+    //-         each color in colors
+    //-             li= color
+    //-     table
+    //-     thead
+    //-         tr
+    //-             td Nama
+    //-             td Umur
+    //-     table
+    //-         tr
+    //-             td Joni
+    //-             td 2th
+
+    //- footer
+    //-     p Copyleft People Here   
